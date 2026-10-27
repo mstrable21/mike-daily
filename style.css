@@ -1,0 +1,69 @@
+ body {
+            font-family: Arial,sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            color #333;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .goal {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+        .goal {
+            padding: 12px;
+            margin-bottom: 8px;
+            border-bottom: 1px solid #cccccc;
+        }
+        .goal:has(input:checked) {
+            background: #4c9853;
+            text-decoration: line-through;
+        }
+        .progress-bar {
+            width: 100%;
+            height: 20px;
+            background: #dddddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        #progress-fill {
+            width: 0%;
+            height: 100%;
+            background: #4caf50;
+            color: black;
+            text-align: center;
+            line-height: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: width 0.3s ease;
+            white-space: nowrap; 
+        }
+        /* Adjust the app for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+            }
+
+            .card {
+                padding: 20px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+        }
